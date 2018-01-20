@@ -17,7 +17,7 @@ public class SLList {
 	public SLList(int x){
 		sentinel = new IntNode(23, null);
 		sentinel.next = new IntNode(x, null);
-		size = 1;
+		size = 1;						fcccccc1	 	`1aqqqqqq
 	}
 	public void addFirst(int x){
 		sentinel.next = new IntNode(x, sentinel.next);
