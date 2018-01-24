@@ -1,4 +1,4 @@
-public class SLList {
+    public class SLList {
 	private static class IntNode {
 		private int item;
 		private IntNode next;
@@ -17,7 +17,7 @@ public class SLList {
 	public SLList(int x){
 		sentinel = new IntNode(23, null);
 		sentinel.next = new IntNode(x, null);
-		size = 1;						fcccccc1	 	`1aqqqqqq
+		size = 1;	
 	}
 	public void addFirst(int x){
 		sentinel.next = new IntNode(x, sentinel.next);
