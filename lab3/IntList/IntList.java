@@ -105,8 +105,28 @@ public class IntList {
         ptr.rest = B;
         return res;
     }
+    /**
+     * Returns the reverse of the given IntList
+     * This method is destructive , if given null as an input, returns null
+     * */
+    public static IntList reverse(IntList A){
+        //check corner case
+        if(A == null || A.rest == null){
+            return A;
+        }
 
-
+        //initate three pointer ( pre, cur, next)
+        IntList pre = null;
+        IntList cur = A;
+        IntList next =null;
+        while(cur!= null){
+            next = cur.rest;
+            cur.rest = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
     /**
      * DO NOT MODIFY ANYTHING BELOW THIS LINE! Many of the concepts below here
      * will be introduced later in the course or feature some form of advanced
